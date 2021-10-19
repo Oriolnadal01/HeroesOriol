@@ -1,4 +1,10 @@
 <ul>
     <li *ngFor="let item of heroes">{{ item }}</li>
+
+    <button (click)="borrarHeroe()">Borrar Heroe</button>
+
+    <div *ngIf="borrado; else elseBlock">
+        <p>{{heroeBorrado}}</p>
+    </div>
+    <ng-template #elseBlock>No se ha borrado ningún héroe</ng-template>
 </ul>
-    

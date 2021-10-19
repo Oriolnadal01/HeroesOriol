@@ -7,7 +7,14 @@ import { Component } from '@angular/core';
 })
 export class ListadoComponent{
   title: string = 'Listado app';
+  borrado: boolean = false;
+  heroeBorrado: string = '';
 
   heroes: string[] = ['Spiderman', 'Superman', 'Iron Man'];
+
+  borrarHeroe(){
+    this.heroeBorrado = this.heroes.shift() || '';
+    this.borrado= true;
+  }
 
 }
