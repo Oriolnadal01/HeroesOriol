@@ -1,10 +1,18 @@
 <ul>
-    <li *ngFor="let item of heroes">{{ item }}</li>
-
+    <li *ngFor="let item of heroes" style="padding: 15px;" (click)="guardarHeroe(item)">{{ item }}<button (click)="guardarHeroe(item)">X</button></li>
+    <br>
     <button (click)="borrarHeroe()">Borrar Heroe</button>
-
+    <br>
+    <br>
     <div *ngIf="borrado; else elseBlock">
-        <p>{{heroeBorrado}}</p>
+        {{heroeBorrado}}
     </div>
     <ng-template #elseBlock>No se ha borrado ningún héroe</ng-template>
+    <br>
+    <div *ngIf="guardar; else elseBlock">
+        {{heroeguardado}}
+    </div>
+    <ng-template #elseBlock>No se ha borrado ningún héroe</ng-template>
+
+
 </ul>
