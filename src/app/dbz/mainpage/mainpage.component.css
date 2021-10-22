@@ -1,0 +1,27 @@
+input{
+  border-radius: 10%;
+  background:cyan;
+-webkit-border-radius: 28;
+-moz-border-radius: 28;
+border-radius: 28px;
+text-shadow: 3px 2px 1px black;
+-webkit-box-shadow: 6px 5px 24px #666666;
+-moz-box-shadow: 6px 5px 24px #666666;
+box-shadow: 6px 5px 24px #666666;
+font-family: Arial;
+color: #fafafa;
+font-size: 27px;
+padding: 19px;
+text-decoration: none;
+}
+
+input:hover{
+  background: rgb(0, 183, 255);
+  text-decoration: none;
+}
+
+.submit{
+  width: 250px;
+  height: 70px;
+  text-align: center;
+}

@@ -1,0 +1,21 @@
+<ul>
+  <li *ngFor="let item of personajes">
+    <h1>Personaje:<br>{{item.nombre}}</h1>
+    <h1>Poder:<br>{{item.poder}}</h1>
+  </li>
+ </ul>
+
+ <div>
+   <form (ngSubmit)="guardar()">
+     <br>
+     <h1>Nombre del Personaje:</h1>
+     <input type="text" [(ngModel)]="nombre" name="nombre">
+     <br>
+     <h1>Nivel de poder:</h1>
+     <input type="poder" [(ngModel)]="poder" name="poder">
+     <br>
+     <br>
+     <br>
+     <input class="submit" type="submit" name="Añadir">
+   </form>
+ </div>
